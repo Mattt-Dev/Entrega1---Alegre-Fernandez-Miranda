@@ -1,0 +1,35 @@
+{%extends 'PaginaPruebaApp/base.html'%}
+
+{% block titulo_pagina %}
+
+Acadamia - Busqueda de Curso
+
+{%endblock%}
+
+{%block contenido_pagina%}
+
+<p>Estamos buscando el curso: {{nombre}}</p>
+
+{%if not cursos%}
+
+    <p>No existe un curso con ese nombre</p>
+
+{% endif %}
+    
+{% if cursos %}
+
+<ul>
+    {% for curso in cursos %}
+    <li>{{curso.nombre}}</li>
+    <li>{{curso.fecha_inicio}}</li>
+    <li>{{curso.profesor}}</li>
+    <li>{{curso.comision}}</li>
+    <br>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+<a href="{% url 'inicio' %}">Inicio</a>
+
+{%endblock%}

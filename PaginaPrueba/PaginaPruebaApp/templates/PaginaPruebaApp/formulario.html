@@ -1,0 +1,22 @@
+{%extends 'PaginaPruebaApp/base.html'%}
+
+{% block titulo_pagina %}
+
+Acadamia - Seleccion
+
+{%endblock%}
+
+{% block contenido_pagina %}
+
+<div>
+
+<br>
+<p style="text-align: center;"> Seleccione opcion para crear</p>
+
+<p style="text-align: center;"> <a href="{% url 'fc' %}">Cursos</a></p>
+<p style="text-align: center;"> <a href="{% url 'fe' %}">Eventos</a></p>
+
+
+</div>
+
+{% endblock %}

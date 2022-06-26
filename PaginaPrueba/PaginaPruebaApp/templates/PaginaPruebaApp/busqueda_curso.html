@@ -1,0 +1,22 @@
+{%extends 'PaginaPruebaApp/base.html'%}
+
+{% block titulo_pagina %}
+
+Academia - Buscar Curso
+
+{%endblock%}
+
+{% block contenido_pagina %}
+
+<form action="/paginaprueba/buscar/" method="GET">
+
+    <br>
+    <br>
+    <p style="text-align: center;"> Ingresar nombre del curso</p>
+    <p style="text-align: center;"><input type="text" name="nombre" id="nombre"></p>
+
+    <p style="text-align: center;"><input type="submit" value="Buscar"></p>
+
+</form>
+
+{%endblock%}

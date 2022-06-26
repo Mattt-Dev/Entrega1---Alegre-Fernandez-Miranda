@@ -1,0 +1,11 @@
+Armar una Landing Page donde se muestren:
+*-* 3 cursos y 3 eventos. Solamente los 3 más destacados o últimos.
+*-* Debe tener esta página la opcion de ir a página Cursos y Eventos.
+*-* En cada una se deben visualizar todos los que hayan.
+*-* Utilizar templates y herencia de los mismos.
+*-* Configure un panel de admin sencillo para poder agregar cursos y eventos.
+*-* Utilice una plantilla que contenga estaticos. Descargandola de algún lugar.
+*-* Cree los modelos correspondientes. Y migre la base de datos.
+*-* El filtro de 3 hagalo en la vista.
+* Subirlo a github y compartirlo por mail si quieren. lucas.trubiano@gmail.com
+* Crear un readme que explique paso a paso como ejecutar el proyecto de forma sencilla.

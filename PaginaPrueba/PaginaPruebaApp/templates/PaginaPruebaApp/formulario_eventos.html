@@ -1,0 +1,25 @@
+{%extends 'PaginaPruebaApp/base.html'%}
+
+{% block titulo_pagina %}
+
+Acadamia - Crear Evento
+
+{%endblock%}
+
+{%block contenido_pagina%}
+
+<form action="" method="POST">
+{% csrf_token %}
+
+    <table>
+
+        {{formulario.as_table}}
+
+    </table>
+
+    <input type="submit", value="Enviar">
+
+</form>
+
+
+{%endblock%}
